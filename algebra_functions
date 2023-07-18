@@ -1,0 +1,139 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+using namespace std;
+
+//-----------------------------------------------------------
+// File name: algebra_functions.cpp
+// Author: Daylen Hall
+// Assign ID:  PROG7
+//-----------------------------------------------------------
+
+    // FUNCTION IMPLEMENTATIONS.
+
+// Prompt for and read integer value.
+void intRead(string Prompt, int & num)
+{
+    cout << endl << Prompt;
+    cin >> num;
+}//intRead
+
+// Display labeled int value.
+void intPrint(string Label, int num)
+{
+    cout << endl << Label << num << endl;
+}//intPrint
+
+// Display the copyright, given unix login and user name.
+void DisplayCopyright(int year, string unixlogin, string Name)
+{
+
+    cout << endl << "(C)  " << year << ", " << unixlogin 
+    << " " << Name << endl << endl;
+
+}//DisplayCopyright
+
+// Compute the sum of two int values.
+int Add(int num1, int num2)
+{
+
+return num1 + num2;
+
+}//Add
+
+// Compute the difference of two int values.
+void Sub(int a, int b, int & diff)
+{
+    diff = a - b;
+}//Sub
+
+// Compute the product of two int values.
+int Mult(int x, int y)
+{
+
+    return x * y;
+
+}//Mult
+
+
+// Compute the quotient of two int values.
+// Return 0 if divisor (y); is zero.
+int Div(int x, int y)
+{
+
+    if (y == 0)
+      return 0; 
+   else 
+      return x / y;
+
+}//Div
+
+
+// Compute the remainder of two int values.
+// Return 0 if divisor (q) is zero.
+int Mod(int p, int q)
+{
+
+    return 0;
+
+}//Mod
+
+
+// Prompt for and read float value.
+float floatRead(string Prompt)
+{
+
+    float num1;
+    cout << endl << Prompt;
+    cin >> num1;
+    return num1;
+
+}//floatRead
+
+// Display labeled float value with specified #decimal places.
+void floatPrint(string Label, float num, int decimalplaces)
+{
+
+    cout << endl << Label << fixed << showpoint << setprecision(decimalplaces) << 
+    num << endl;
+
+}//floatPrint
+
+// Compute the sum of two float values.
+float Add(float s, float t)
+{
+
+    return s + t;
+
+}//Add
+
+// Compute the difference of two float values.
+float Sub(float u, float v)
+{
+
+return u - v;
+
+}//Sub
+
+// Compute the product of two float values.
+void Mult(float s, float t, float & prod)
+{
+
+prod = s * t;
+
+}//Mult
+
+
+// Compute the quotient of two float values.
+// Return 0 if divisor (t); is zero.
+float Div(float s, float t)
+{
+if (t == 0)
+    return 0.0;
+
+else 
+    return s / t;
+
+}//Div
+
